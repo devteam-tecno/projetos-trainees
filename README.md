@@ -45,4 +45,4 @@ Lembrando que esse projeto vai ser levado em conta para a **efetivação** de vo
 
 # Prazo:
 
-Entregar até **23:59 do dia 10/07**
+Entregar até **23:59 do dia 31/07**
