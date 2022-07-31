@@ -1,0 +1,81 @@
+body{
+    background-color: #23242a;
+    max-width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    color: orange;
+    height: calc(100vh - 80px)
+}
+
+#retangCentro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width:70vw;
+    height: 50vh;
+    border: 3px orange solid;
+    border-radius: 5px;
+    background-color: #1b191b;
+}
+
+#selectMoedas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+#coinAndAmount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+}
+
+#insertValue{
+    width: 90px;
+    height: 40px;
+    font-size: 24px;
+}
+
+#result{
+    font-size: 25px;
+}
+
+#convertCoins{
+    width: 7em;
+    height: 3em;
+    font-size: 15px;
+    font-weight: 600;
+    color: #23242a;
+    background-color: orange;
+    border: 3px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px){
+    #selectMoedas{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #coinAndAmount{
+        padding-right: 20px;
+    }
+}

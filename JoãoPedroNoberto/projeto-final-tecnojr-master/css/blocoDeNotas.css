@@ -1,0 +1,56 @@
+body{
+    background-color: #23242a;
+}
+
+main{
+
+}
+
+#bloco-de-notas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    padding: 24px;
+    gap: 24px;
+    justify-content: space-evenly;
+}
+
+.nota{
+    height: 240px;
+    box-sizing: border-box;
+    padding: 16px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px orange;
+    font-size: 18px;
+}
+
+.add-nota{
+    height: 240px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(255, 166, 0, 0.726);
+    cursor: pointer;
+}
+
+.add-nota:hover{
+    background-color: rgb(255, 166, 0);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px){
+    #bloco-de-notas{
+        grid-template-columns: repeat(auto-fill, 150px);
+    }
+    .nota{
+        height: 150px;
+        font-size: 16px;
+    }
+    .add-nota{
+        height: 150px;
+        font-size: 16px;
+    }
+}
