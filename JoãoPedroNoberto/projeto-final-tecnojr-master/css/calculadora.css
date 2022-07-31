@@ -1,0 +1,58 @@
+body{
+    background-color: #23242a;
+    max-width: 100%;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 80px); /* subtraindo o tamanho do header para centralizar o conteúdo na main */
+}
+
+.calculadora{
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+table tr td button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: #23242a;
+    color: white;
+}
+
+table tr td button:hover{
+    background-color: #b3700c;
+}
+
+#igualButton{
+    height: 106px;
+}
+
+#zeroButton{
+    width: 106px;
+}
+
+.calculadora h1{
+    font-size: 28px;
+}
+
+#resultado{
+    width: 207px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+    background-color: #23242a;
+    color: white;
+}
