@@ -2,8 +2,11 @@
 
 ## Como enviar seu projeto
 
-[Tutorial pelo VSCode]()
-[Tutorial pelo navegador]()
+[Tutorial pelo VSCode](./tut_code.md)
+
+[Tutorial pelo navegador](./tut_nav.md)
+
+## Informações
 
 Vocês devem desenvolver um projeto, com tema escolhido por vocês, que deve utilizar tudo que foi visto durante a capacitação.
 
