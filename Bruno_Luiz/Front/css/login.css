@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: 0%;
+}
+
+body {
+  display: flex;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(191, 148, 255);
+}
+small{
+  color: rgb(228, 214, 250);
+}
+
+input::placeholder {
+  color: rgba(245, 245, 245, 0.342);
+}
+
+#botao{
+  padding: 20px;
+}
+
+button {
+  height: 20px;
+  width: 100%;
+  padding: 25px;
+  background-color: #8e05c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font: 30px bolder;
+  color: #efc7ff;
+  border: none;
+  -webkit-box-shadow: 6px 7px 12px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 7px 12px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#esquerda {
+  height: 100vh;
+  width: 60vw;
+  background-image: url("../img/programadora.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#direita {
+  height: 100vh;
+  width: 40vw;
+  background-color: rgb(50, 28, 96);
+  justify-content: center;
+  align-items: center;
+}
+
+#login_box {
+  height: 100vh;
+  width: 40vw;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 6px 7px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+#login_box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(to right, #37064b 0%, #610b83 50%, #37064b 100%);
+  background-size: 200%;
+  animation: transicao 10s linear infinite;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 80%;
+}
+
+.input {
+  background-color: #700b97;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
+
+#icone {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d9bcbc;
+}
+
+.espaco {
+  background-color: #700b97;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#esqueci {
+  font-size: 13px;
+  margin-top: -20px;
+  align-self: baseline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes transicao {
+  0% {
+    background-position: -100% -100%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}

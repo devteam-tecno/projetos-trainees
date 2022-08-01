@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: 0%;
+}
+
+body {
+	display: flex;
+	font-family: "Inter", sans-serif;
+	background-color: var(--themecolor);
+	color: white;
+	background-color: #591277;
+	justify-content: center;
+}
+
+.textoBotao {
+	color: white;
+	text-decoration: none;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    background-color: rgb(50, 28, 96);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 12px 1px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+    width: 60vw;
+    justify-items: center;
+    align-items: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+	width: 80%;
+}
+
+#inputMidia{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+p{
+	margin-bottom: 10px;
+}
+
+form input{
+	width: 100%;
+	height: 40px;
+}
+
+form button{
+	width: 50%;
+	height: 50px;
+	justify-self: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin: 10px;
+	border: none;
+	color:white;
+	background-color: #700b97;
+	box-shadow: 6px 7px 12px 1px rgba(0, 0, 0, 0.3);
+	opacity: 0.9;
+}
+
+form button:hover{
+	opacity: 1;
+}
+
+a{
+	margin-top: 5px;
+	color: rgb(191, 148, 255);
+	text-decoration: none;
+	opacity: 0.8;
+}
+  
+a:hover{
+	opacity: 1;
+	text-decoration: underline;
+}
+
+input{
+    color: white;
+	background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+    align-self: center;
+    border: none;
+	padding: 10px;
+	width: fit-content;
+}
+input::placeholder {
+    color: rgba(245, 245, 245, 0.342);
+}
+
+#descricaoPost{
+	height: 80px;
+	width: 96%;
+}
+
+#postar{
+	align-self: center;
+}

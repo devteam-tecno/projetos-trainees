@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/perfil.css" />
+		<title>Perfil Alheio | Olá Dev!</title>
+		<script
+			src="https://kit.fontawesome.com/048239d8b6.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="shortcut icon"
+			href="../img/gatoIcon.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="topbar">
+				<div id="pesquisa">
+					<div id="campoBusca">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input
+							type="text"
+							name="Username"
+							placeholder="Pesquise no Olá Dev!"
+							id="campo_busca"
+							onkeyup="buscar(this)"
+						/>
+						<section id="resultados"></section>
+					</div>
+				</div>
+				<img id="header" src="..\img\Mago arvore.jpg" alt="" />
+				<div id="baixoTop">
+					<img
+						id="foto"
+						src="..\img\background_cadastro.png"
+						alt=""
+					/>
+					<button class="botaoHeader" id="seguir">
+						<a href="" class="textoBotao" id="seguir">Seguir</a>
+					</button>
+				</div>
+				<div id="info">
+					<h1 id="nome">#IgorParaPresidenciaNacional</h1>
+					<p id="usuario">@IsaPresidenteSuprema</p>
+					<p id="sobre">Amamos a TecnoJr! Contrata nós por favor.</p>
+					<div id="seguidoresNumero">
+						<p id="seguindo">Seguindo 0</p>
+						<p id="seguidores">Seguidores 0</p>
+					</div>
+				</div>
+				<div id="botoesTopbar">
+					<button class="botaoHeader">
+					  <a href="./perfil.html" id="novoPost">Perfil Inicial</a>
+					</button>
+				  </div>
+			</div>
+        <div id="feed"></div>
+		</div>
+		<script src="../js/perfilOutro.js"></script>
+	</body>
+</html>
