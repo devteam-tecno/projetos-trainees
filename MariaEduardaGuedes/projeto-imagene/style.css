@@ -1,0 +1,252 @@
+body {
+    margin: 0px;
+}
+
+#cabeçalho {
+    padding: 6px;
+    padding-left: 25px;
+    background-color: rgba(245, 245, 245, 0.86); 
+    font: normal 28px Jacques Francois;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#logo {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: rgb(223, 167, 167);
+    color: #B45555;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px rgb(193, 192, 192);
+}
+
+#logo:hover {
+    background-color: #B45555;
+    color: rgb(255, 255, 255);
+}
+
+#nome {
+    display: inline;
+    padding: 15px;
+    color:#B45555;
+}
+
+#quadroPesq {
+    margin: 90px 46px 120px 46px;
+    width: 30%;
+    padding: 40px;
+    float: left;
+    background-color: #DA9696;
+    border-radius: 20px;
+    box-shadow: 7px 5px 25px rgb(193, 192, 192);
+}
+
+#frase {
+    color: white;
+    font: normal 30px Jacques Francois;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#pesq {
+    margin: auto;
+    text-align: center;
+}
+
+#pesq > input {
+    width: 80%;
+    padding: 7px;
+    padding-left: 14px;
+    border-radius: 20px 0 0 20px;
+    font-size: 10pt;
+    border: none;
+}
+
+#pesq > input:focus {
+    outline: none;
+    box-shadow: 7px 5px 25px #b87d7d;
+    transition: box-shadow 0.6s;
+}
+
+#quadroDestaques {
+    margin: 40px 40px;
+    width: 50%;
+    float: right;
+}
+
+#nomeDes {
+    background-color: #B45555;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 0.9%;
+    color: white;
+    font: normal 20px Jacques Francois;
+}
+
+#quadroImgDes{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.quad {
+    display: inline-block;
+    height: 270px;
+    width: 190px;
+    border: solid 3px #B45555;
+    border-radius: 12px;
+}
+
+#q1 {
+    background-image: url('https://lunetas.com.br/wp-content/uploads/2022/04/animes-e-criancas-portal-lunetas.jpg.webp');
+    background-size: 253%;
+    background-repeat: no-repeat;
+}
+
+#q2 {
+    background-image: url('https://ae01.alicdn.com/kf/HTB1tS8_WkvoK1RjSZFDq6xY3pXav/SA-1027-3d-Rosa-Tijolo-Papel-De-Parede-Adesivos-Doce-Meninas-Quarto-Quarto-Wallpapers-Rolo-Autoadesivo.jpg_Q90.jpg_.webp');
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+
+#q3 {
+    background-image: url('https://images.unsplash.com/photo-1581520901820-0d655a895596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 195px;
+}
+
+#quadroImg {
+    padding: 40px;
+    background-color: rgb(252, 241, 224);
+    clear: left;
+    margin: 50px 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.qImg {
+    display: inline-block;
+    height: 220px;
+    width: 330px;
+    border-radius: 18px;
+    box-shadow: 7px 5px 25px rgb(192, 166, 127);
+}
+
+#Img1 {
+    background-image: url('https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 30px;
+}
+
+#Img2 {
+    background-image: url('https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Img3 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/10/17/03/pots-716579_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    margin-left: 30px;
+}
+
+#Img4 {
+    background-image: url('https://cdn.pixabay.com/photo/2020/11/25/09/30/girls-5775077_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#Img5 {
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    margin-top: 30px;
+}
+
+/* página 2 */
+
+.quadroPesq2 { 
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pesq2 {
+    border: solid .4px rgb(224, 219, 219);
+    width: 400px;
+    padding: 9px;
+    padding-left: 14px;
+    font-size: 10pt;
+    border-radius: 20px 0 0 20px;
+}
+
+.pesq2:focus {
+    outline: none;
+    box-shadow: 6px 5px 25px rgb(193, 192, 192);
+    transition: box-shadow 0.6s;
+}
+
+#resultPesq {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* responsividade tablet */
+
+@media(max-width: 760px) {
+    #quadroPesq {
+        float: none;
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    #quadroDestaques {
+        margin: auto;
+        margin-top: 60px;
+        float: none;
+        width: 100%;
+
+    }
+
+    #Img1, #Img2, #Img3, #Img4, #Img5 {
+        margin: 5px;
+    }
+
+}
+
+/* responsividade celular */
+
+@media(max-width: 430px) {
+    #quadroPesq {
+        float: none;
+        margin: auto;
+        margin-top: 50px;
+        width: 240px;
+    }
+
+    #quadroDestaques {
+        margin-top: 40px;
+        float: none;
+        width: 100%;
+    }
+
+    .quad {
+        margin: 5px;
+    }
+
+    #Img1, #Img2, #Img3, #Img4, #Img5 {
+        margin: 5px;
+        width: 200px;
+        height: 110px;
+    }
+
+}
