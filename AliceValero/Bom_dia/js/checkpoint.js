@@ -4,9 +4,9 @@ let checkpoint = localStorage.getItem("checkpoint")
 if(!checkpoint){
     localStorage.setItem ("checkpoint",caminho)
 }else{
-    if(caminho != checkpoint){
-        window.location = checkpoint
-    }
+    //if(caminho != checkpoint){
+      //  window.location = checkpoint
+    //}
 }
 
 function set_checkpoint (path){
