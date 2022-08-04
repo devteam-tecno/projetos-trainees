@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Lato:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #07747b, #f8eecc, #f66651);
+    max-width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+/* CSS do Carousel */
+#Carousel{
+    position: relative; 
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+    
+
+.gallery-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.8s ease-in-out;
+}
+
+
+.imagemCarousel{
+    position: relative;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.botao-next{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    border: none;
+    padding: 10px;
+    padding-left: 10px;
+    background: linear-gradient(to right, transparent 0%, black 300%);
+    opacity: 0.5;
+    transition: all 400ms ease-in-out;
+    
+}
+.botao-prev{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    border: none;
+    padding: 10px;
+    padding-right: 10px;
+    background: linear-gradient(to left, transparent 0%, black 300%);
+    opacity: 0.5;
+    transition: all 400ms ease-in-out;
+}
+/* Ao passar o mouse em cima, evidencia mais o botão direito */
+.botao-next:hover{
+    opacity: 1;
+}
+/* Ao passar o mouse em cima, evidencia mais o botão esquerdo */
+.botao-prev:hover{
+    opacity: 1;
+}
+/* Fim do CSS do Carousel */
+
+.motivacional{
+    font-family: 'Square Peg', cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    padding: 60px;
+}
+
+/* Inicio do CSS do informativo da Empresa */
+
+#propaganda-empresa{
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #21252971;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 30px;
+    margin: 0 30px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* CSS do Slide Show */
+#slideshow{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+/* Imagens que ficam ocultas */
+.imagemSlide{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+/* Imagem que é vísivel */
+.imagemSlide-principal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 800ms;
+
+}
+/* Fim do CSS do Slide Show */
+
+.texto-propaganda-empresa{  
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.texto-propaganda-empresa h1{
+    font-size: 50px;
+}
+
+.texto-propaganda-empresa p{
+    font-size: 30px;
+}
+/* Fim do CSS do informativo da Empresa */
+
+/* Inicio do CSS da propaganda de devolução */
+#devolução{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px 50px;
+    flex-direction: column;
+}
+
+.img-devol{
+    position: relative;
+    left: 70%;
+    display: flex;
+    align-items: flex-end;
+    width: 320px;
+    height: 250px;
+}
+
+.img-devol img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(4px 4px 15px rgba(128, 128, 128, 0.2));
+}
+
+.texto-devol{
+    padding: 15px 25px;
+    background-color: #21252971;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.texto-devol p{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.ir-pagContatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:azure;
+    border-radius: 10px;
+    background: linear-gradient(to right, #52796f, #354f52);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.ir-pagContatos:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+/* Fim do CSS da propaganda de devolução */
+
+
+/* Inicio do CSS do footer */
+footer{
+    background-color: #354f52;
+    padding: 30px 0;
+}
+
+
+.container-footer{
+    width: 100%;
+    height: 200px;
+    padding: 0 4%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo-footer img{
+    width: 100%;
+    height: 100%;
+}
+
+.area-footer{
+    width: 25%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-content: flex-start;
+}
+
+.area-footer h4{
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.area-footer ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.area-footer>ul>li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-content: flex-start;
+}
+/* Fim do CSS do footer */
+
+@media (max-width: 640px){
+
+/* CSS responsivo do carousel */
+    #Carousel{
+        height: 176px;
+    }
+
+    .botao-next img,
+    .botao-prev img{
+        width: 26px;
+        height: 48px;
+    }
+/*Fim do CSS responsivo do carousel */
+
+.motivacional{
+    padding: 20px;
+    font-size: 10px;
+}
+
+/* CSS responsivo do slideshow */
+    #propaganda-empresa{
+        height: 250px;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 15px;
+        gap: 5px;
+    }
+    #slideshow{
+        width: 150px;
+        height: 150px;
+    }
+    .texto-propaganda-empresa{
+        width: 60%;
+        height: 100%;
+        gap: 30px;
+    }
+    .texto-propaganda-empresa h1{
+        font-size: 20px;
+    }
+    
+    .texto-propaganda-empresa p{
+        font-size: 12px;
+    }
+/*Fim do CSS responsivo do slideshow */
+
+/*Inicio CSS responsivo da propaganda de devolução */
+
+#devolução{
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0 20px;
+}
+.img-devol{
+    width: 160px;
+    height: 125px;
+}
+.texto-devol{
+    padding: 7px 15px;
+    background-color: #21252971;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+    height: 60px;
+    gap: 15px;
+}
+.ir-pagContatos{
+    width: 70px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 9px;
+    border-radius: 5px;
+}
+
+.texto-devol p{
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+/*Fim CSS responsivo da propaganda de devolução */
+
+
+/* CSS responsivo do footer */
+footer{
+    padding: 10px 0;
+}
+.container-footer{
+    height: 120px;
+}
+.area-footer h4{
+    font-size: 15px;
+}
+
+.area-footer>ul>li>a{
+    font-size: 8px;
+}
+/*Fim CSS responsivo do footer */
+
+}

@@ -1,5 +1,13 @@
 # Instruções
 
+## Como enviar seu projeto
+
+[Tutorial pelo VSCode](./tut_code.md)
+
+[Tutorial pelo navegador](./tut_nav.md)
+
+## Informações
+
 Vocês devem desenvolver um projeto, com tema escolhido por vocês, que deve utilizar tudo que foi visto durante a capacitação.
 
 Inicialmente o projeto vai ser individual, porém quem quiser fazer dupla deverá produzir um relatório expecificando o que cada integrante ficou responsável.

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <!-- HTML do header -->
+    <header>
+        <div id="logo">
+            <a href="index.html"><img id="logo-imagem" src="logo-marca.png" alt="logo"></a>
+        </div>
+        <nav id="conteudo_header">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim do HTML do header -->
+    <main>
+                <!-- HTML do Carousel -->
+        <div id="Carousel">
+            <button class="botao-next moveCarousel"><img src="carousel/botao-direito.png" alt="" ></button>
+            <button class="botao-prev moveCarousel"><img src="carousel/botao-esquerdo.png" alt="" ></button>
+            <div class="gallery-wrapper">
+                <img src="carousel/banner 1.png" alt="" class="imagemCarousel">
+                <img src="carousel/banner 2.png" alt="" class="imagemCarousel">
+                <img src="carousel/banner 3.png" alt="" class="imagemCarousel">
+            </div>
+        </div>
+        <!-- Fim do HTML do Carousel -->
+
+        <div class="motivacional">
+            <h1>"A vida é cinzenta e sem graça, você pode se divertir um pouco quando se veste." - Iris Apfel</h1>
+        </div>
+        
+        <!-- HTML do SlideShow -->
+        <div id="propaganda-empresa">
+            <!-- Imagens do slideshow -->
+            <div id="slideshow" >
+                <img src="slideshow/imagem-slide1.png" alt="" class="imagemSlide imagemSlide-principal">
+                <img src="slideshow/imagem-slide2.png" alt="" class="imagemSlide">
+                <img src="slideshow/imagem-slide3.png" alt="" class="imagemSlide">
+            </div>
+            <div class="texto-propaganda-empresa">
+                <h1>Quem Somos ?</h1>
+                <p>A SOCA-MISA&copy é uma empresa que almeja sempre fornercer peças que combinem estilo e versatilidade perfeitamente. Nossas roupas refletem o estilo de vida que buscamos proporcionar ao mundo, descontraído e leve.</p>
+            </div>
+        </div>
+        <!-- Fim do HTML do SlideShow -->
+
+        <!-- HTML da propaganda de devolução -->
+        <div id="devolução">
+            <div class="img-devol">
+                <img src="img-devolução.png" alt="" class="oi">
+            </div>
+            <div class="texto-devol">
+                <p>Não gostou do produto ? Sem problemas, podemos troca-lo no prazo de até 15 dias !</p>
+                <a class="ir-pagContatos" href="contato.html">CLIQUE AQUI</a>
+            </div>
+        </div>
+        <!-- Fim do HTML da propaganda de devolução -->
+    </main>
+    <footer>
+        <!-- HTML do footer -->
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="logo-marca.png" alt="">
+            </div>
+            <div class="conteudo-footer">
+                <div class="area-footer">
+                    <h4>MINHA CONTA</h4>
+                    <ul>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Alterar endereço</a></li>
+                        <li><a href="#">Alterar dados</a></li>
+                    </ul>
+                </div>
+                <div class="area-footer">
+                    <h4>SUPORTE</h4>
+                    <ul>
+                        <li><a href="#">Central de Atendimento</a></li>
+                        <li><a href="#">Rastrear envio</a></li>
+                        <li><a href="#">Política de entrega</a></li>
+                    </ul>
+                </div>
+                <div class="area-footer">
+                    <h4>INSTITUCIONAL</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

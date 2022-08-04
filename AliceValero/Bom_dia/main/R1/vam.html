@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/botoes.css">
+</head>
+
+<body>
+    <div id="background"> <img src="../../assets/img/sala.jpg" alt=""></div>
+    
+    <div id="personagem_img" class="escondido">
+        <img src="../assets/pers/pai_SN.png" alt="">
+    </div>
+    
+    <div id="content" class="com_fundo">
+        
+        <div id="personagem">
+            <div id="nome">
+                <p> </p>
+            </div>
+        </div>
+        
+        <div id="história">
+        
+            <div id="dialogo" >
+                <p>Não. Se eu não sair agora não vou chegar a tempo</p>
+            </div>
+        
+            
+            <button class="botao_dia" onclick="passar_dia()" >>></button>
+            
+            <div id="escolha" style="display: none;">
+                <button id="es_1" onclick="escolha_1()">Se virar</button>
+                <button id="es_2" onclick="escolha_2()">Ir no conselho estudantil</button>
+        
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    <script src="../../js/R1/vam.js"></script>
+    <script src="../../js/checkpoint.js"></script>
+
+</body>
+
+</head>

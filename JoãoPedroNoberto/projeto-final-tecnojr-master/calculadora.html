@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolbox - Calculadora</title>
+    <link rel="icon" href="img/toolboxIcon.png">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/global/fonts.css">
+    <link rel="stylesheet" href="css/global/reset.css">
+    <link rel="stylesheet" href="css/components/header.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/return.png" alt="voltar" id="backButton"></a>
+        <h2 id="titulo">Toolbox</h2>
+    </header>
+    <main>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="calcButton">C</button></td>
+                    <td><button class="calcButton"><</button></td>
+                    <td><button class="calcButton">/</button></td>
+                    <td><button class="calcButton">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calcButton">7</button></td>
+                    <td><button class="calcButton">8</button></td>
+                    <td><button class="calcButton">9</button></td>
+                    <td><button class="calcButton">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calcButton">4</button></td>
+                    <td><button class="calcButton">5</button></td>
+                    <td><button class="calcButton">6</button></td>
+                    <td><button class="calcButton">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calcButton">1</button></td>
+                    <td><button class="calcButton">2</button></td>
+                    <td><button class="calcButton">3</button></td>
+                    <td rowspan="2"><button id="igualButton" class="calcButton">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="zeroButton" class="calcButton">0</button></td>
+                    <td><button class="calcButton">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="script/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="images/icon.ico"/>
+    <link rel="stylesheet" href="assets/css/visualIndex.css">
+    <link rel="stylesheet" href="assets/css/slide.css">
+    <title>Estarolas</title>
+</head>
+
+<body>
+    <audio src="audio/click.m4a" id="click"></audio>
+    <div class="main">
+        <h1>Bem vindo ao Estarolas</h1>
+        <p>_____________________________________________________</p>
+        <p></p>
+        <button class="local" id="button">Local</button>
+        <button id="button">Online</button>
+        <button onclick="ShowT()" id="button">Tutorial</button>
+    </div>
+    <div class="slider" style='display: none;' id="1">
+        <button onclick="ShowT()" id="CSlide">Fechar</button>
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide frist">
+                <div class="textSlide">
+                    <h1>MOVIMENTAÇÃO</h1>
+                    <p>Para se movimentar, bastar clicar ou tocar na casa que contém a peça, e em seguida selecionar a casa 
+                        de destino.
+                    </p>
+                    <p>A peça das casas de sua respectiva cor, só podem andar nelas mesmas,
+                        tentar mover de uma casa de uma cor para outra que a cor seja diferente
+                        será considerado um movimento inválido, o limite de movimentação é de 1 casa.
+                    </p>
+                    <div class="image">
+                        <img src="images/move.gif" alt="error" id="move">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="textSlide">
+                    <h1>SOBREPOSIÇÃO</h1>
+                    <p>Para sobrepor uma casa, basta clicar 2 vezes nela.</p>
+                    <p>Para dificultar o adversário de ganhar se pode trocar as casas onde ele faria uma combinação vencedora,
+                        podendo também mover suas peças para ela, para que assim ele não possa retirar a sobreposição, ATENÇÃO, 
+                        após sobrepor uma casa, a sobreposição só poderá ser retirada depois do próximo turno do jogador adversário 
+                        e em diante, e assim que uma casa for retirada a sobreposição, ela só poderá ser sobreposta de novo depois 
+                        do próximo movimento do adversário e em diante, caso não tenha uma peça encima.</p>
+                    <div id="allsobrepor">
+                        <img src="images/sobrepor.gif" alt="error" id="gif">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="textSlide">
+                    <h1>TURNOS</h1>
+                    <p>Os turnos se contam ao fazer um movimento de uma peça, ou sobrepor uma casa, movimentos inválidos e cancelamento de 
+                        ações não pulam turnos. As verdes sempre começam</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="textSlide">
+                    <h1>VITÓRIA</h1>
+                    <p>A condição de vitória é que o jogador alinhe 3 de suas peças de suas respectivas casas em qualquer diagonal, 
+                        horizontal e vertical, / , - , |.</p>
+                        <img src="images/ExVitoria.png" alt="error" id="win">
+                        <img src="images/win.gif" alt="error" id="win">
+                </div>
+            </div>
+        </div>
+        <!-- manual navigation -->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn" onclick="selectslide(event)" style="background-color: blue;"></label>
+            <label for="radio2" class="manual-btn" onclick="selectslide(event)" style=""></label>
+            <label for="radio3" class="manual-btn" onclick="selectslide(event)" style=""></label>
+            <label for="radio4" class="manual-btn" onclick="selectslide(event)" style=""></label>
+        </div>
+    </div>
+    <script src="assets/js/master.js"></script>
+</body>
+
+</html>

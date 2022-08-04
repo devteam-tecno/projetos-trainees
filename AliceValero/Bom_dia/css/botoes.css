@@ -1,0 +1,64 @@
+.botao_pequeno {
+    position: absolute;
+    padding: 15px 25px;
+    font-size: medium;
+    background-color: #ffc8dd;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom: 20%;
+}
+
+.botao_dia {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: none;
+    background-color: #FFEFC2;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+
+}
+
+#es_1, #es_2{
+    background-color: #FFEFC2;
+    right: 50px;
+    padding: 15px 25px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    min-width: max-content;
+    
+}
+.es_1, .es_2{
+    background-color: #FFEFC2;
+    right: 50px;
+    padding: 15px 25px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    min-width: max-content;
+    
+}
+
+
+
+.replay {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    background-color: #FFEFC2;
+    padding: 15px 25px;
+    font-size: medium;
+    border-radius: 10px;
+}
+

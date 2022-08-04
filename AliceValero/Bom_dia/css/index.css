@@ -1,0 +1,125 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#background img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#content {
+   
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    position:absolute;
+    max-height: 150px;
+    min-height: 130px;
+    bottom: 0px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+
+}
+
+#historia {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#dialogo {
+    max-width: 1200px;
+    font-size:large;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    position:absolute;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+p {
+   text-decoration: none; 
+}
+
+.com_fundo {
+    background-color:  #ffc8dd;
+
+}
+
+#escolha {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    gap: 100px;
+    bottom: 60px;
+    display: flex;
+}
+
+#final {
+    font-size: large;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100vw;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
+}
+
+#personagem {
+    padding-left: 50px;
+    padding-bottom: 90px;
+    font-size: x-large;
+}
+
+#personagem_img img {
+    height: 500px;
+
+}
+
+#personagem_img {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    height: calc(100vh - 190px);
+}
+
+#personagem_img.escondido {
+    display:none;
+}
+
+@media (max-width:400px) {
+    #personagem{
+        padding-left: 20px;
+    }
+    #escolha{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+}
