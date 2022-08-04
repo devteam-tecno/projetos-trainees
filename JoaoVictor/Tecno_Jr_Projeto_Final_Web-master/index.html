@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" href="pokeball_favicon.png" type="image/x-icon">
+    <title>Poke Quiz</title>
+</head>
+
+<body>
+    <div id="header">
+        <img class="pokeball" src="pokeball_favicon.png">
+        <h1 id="tittle">POKEQUIZ</h1>
+        <img class="pokeball" src="pokeball_favicon.png">
+    </div>
+    <h3>Escolha até a geração desejada</h3>
+    <div class="shadowSprite_Selector">
+        <div class="select">
+            <select id="genSelect">
+                <option value="1">1ª Geração</option>
+                <option value="2">2ª Geração</option>
+                <option value="3">3ª Geração</option>
+                <option value="4">4ª Geração</option>
+                <option value="5">5ª Geração</option>
+                <option value="6">6ª Geração</option>
+                <option value="7">7ª Geração</option>
+                <option value="8">8ª Geração</option>
+                <option value="9">Todas as gerações (1ª a 9ª)</option>
+            </select>
+            <button type="submit" id="startQuiz"><span></span>Iniciar Quiz</button>
+        </div>
+    </div> 
+
+    <div id="randomBox">
+        <img id="pokeImg">
+    </div>
+    <h3>Advinhe o Pokemon</h3>
+    <div>
+        <input id="userInput" type="text" placeholder="Nome do Pokemon"/>
+        <button type="submit" id="confirmQuiz"><span></span>Confirmar</button>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
