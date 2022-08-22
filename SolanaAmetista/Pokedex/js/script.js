@@ -22,9 +22,12 @@ const renderPkm =  async (pokemon) => {
     if (data) {
         pName.innerHTML = data.name
         pNumber.innerHTML = data.id + " - "
-        pImg.src = data.sprites.versions['generation-viii']['icons']['front_default']
-        //pImg.src = data.sprites.versions['generation-v']['black-white']['animated']['front_default']
+        pImg.src = data.sprites.versions['generation-v']['black-white']['animated']['front_default']
+        if (data.sprites.versions['generation-v']['black-white']['animated']['front_default'] == null) {
+            pImg.src = data.sprites.versions['generation-viii']['icons']['front_default']
+        }
         id = data.id
+        console.log(data.sprites.versions['generation-v']['black-white']['animated']['front_default'])
     }
     else {
         pName.innerHTML = 'Não encontrado'
