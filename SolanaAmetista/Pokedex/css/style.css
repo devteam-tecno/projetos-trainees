@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #5cccfb, #f3abbb, #fcfcfc, #f3abbb, #5cccfb );
+    min-height: 100vh;
+}
+main {
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pkmImg {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pkmData {
+    position: absolute;
+    font-weight: 600;
+    color: gray;
+    top: 54%;
+    right: 27%;
+    font-size: clamp(9px, 5vw, 25px);
+    text-transform: capitalize;
+}
+
+.pkmName {
+    color: black;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13%;
+
+}
+
+.search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -4px 3px 0 rgba(89, 89, 90, 0.637);
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%, 0);
+    display: flex;
+    gap: 20px;
+
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 3px 0 rgb(49, 48, 48), -4px 6px 0 black;
+    color: white;
+    background-color: #444;
+}
+
+.button:active {
+    background-color: red;
+    box-shadow: inset 0.5px 0.5px 0 black;
+    font-size: 0.9rem;
+}
